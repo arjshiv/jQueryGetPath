@@ -36,4 +36,4 @@ The code is available under the [MIT license](LICENSE.txt).
 
 
 ## Credits
-Credit to [HTML5 Boilerplate](https://github.com/h5bp/html5-boilerplate)
+Credit to [HTML5 Boilerplate](https://github.com/h5bp/html5-boilerplate) for helping me build out this sample
