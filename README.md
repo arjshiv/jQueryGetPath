@@ -15,7 +15,8 @@ jQueryGetPath is a simple jQuery extension to get the CSS Path of any element in
 ## Features
 
 * Works with jQuery 1.x and 2.x
-* Easy to use 
+* Easy to use
+* Errs on the side of specificity
 
 ## Browser support
 

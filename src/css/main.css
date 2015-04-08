@@ -87,8 +87,10 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
-p.well {
+body {
+    font-family: Roboto, arial, sans-serif;
+}
+.well {
     background: whitesmoke;
     margin: 10px;
     border-radius: 4px;
@@ -96,32 +98,32 @@ p.well {
     border: 1px solid rgb(229, 229, 229);
 }
 
-div.resultDiv {
+.well.source {
+    background-color: #001b36;
+    color: white;
+}
+
+.pathfinder:hover {
+    cursor: pointer;
+    background-color: #53c5d8;
+    color: white;
+}
+
+div.results {
     margin: 10px;
     margin-top: 30px;
-    background-color: whitesmoke;
+    background-color: #aeb9ca;
     padding: 10px;
     border: 3px solid rgb(229, 229, 229);
+    font-size: 125%;
 }
 
-div.resultDiv > ul > li > span {
-    margin-left: 5px;
-    margin-right: 5px;
+div#resultDiv {
+    font-family: monospace;
+    white-space: pre;
+    font-weight: bold;
+    font-size: 18px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ==========================================================================
    Helper classes

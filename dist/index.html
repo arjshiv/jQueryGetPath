@@ -10,29 +10,68 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
         <link rel="stylesheet" href="css/main.css">
+        <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+        <h1>jQueryGetPath Demo</h1>
+        <div class="results">
+            You clicked on:
+            <div id="resultDiv">None</div>
+        </div>
+        <div id="div0">
+            <div class="well">
+                <div class="pathfinder">Clickable without ID</div>
+            </div>
+            <div class="well">
+                <div id="withId" class="pathfinder">Clickable with ID</div>
+            </div>
+        </div>
+        <div id="div1">
+            <p class="well pathfinder p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi consequatur ea
+                excepturi officiis quia, quo saepe sunt tempore unde voluptates? Amet cum delectus dolor eveniet
+                molestiae odit porro sunt voluptatum.</p>
 
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+            <p class="well pathfinder p2">Accusamus ad autem, consequatur deserunt error eum excepturi nam nisi odit provident quae
+                quas repellendus tenetur veniam veritatis! Ab animi earum enim, error illum nisi qui temporibus. Ipsam
+                quidem, soluta?</p>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+            <p class="well pathfinder p3">Atque blanditiis dolore ducimus sit voluptatibus! Aliquam autem beatae cum dolores fugiat
+                iusto labore laboriosam magnam maxime nam nesciunt officia omnis perferendis porro praesentium repellat
+                sapiente sed sit voluptas, voluptatem!</p>
+        </div>
+        <div id="div2">
+            <p class="well pathfinder p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquid amet
+                dignissimos eos ex ipsam iste libero magni nisi nulla omnis, pariatur quam quia quidem sapiente velit
+                voluptatum! Alias, cum!</p>
+
+            <p class="well pathfinder p2">Dolorum eaque iusto rem totam unde, veritatis! Animi aperiam, asperiores cum dolor
+                dolorem explicabo id incidunt, ipsam laudantium minus natus pariatur perferendis reiciendis rem repellat
+                reprehenderit vel vero vitae voluptates.</p>
+
+            <p class="well pathfinder p3">Architecto distinctio fuga quod. Consequatur debitis enim harum ipsa molestiae quam!
+                Accusantium, commodi corporis eius eligendi exercitationem iure laboriosam maxime minus nesciunt
+                officiis quasi quis reiciendis sint tempore temporibus ullam?</p>
+        </div>
+        <div class="source well">
+            How does this work ?
+            <pre>
+$(function(){
+    $('.pathfinder').on('click', function(){
+        var $currentNode = $(this);
+        var cssPathForThisNode = $currentNode.getPath(); //This is where the magic happens
+        $('#resultDiv').html(cssPathForThisNode);
+    });
+});</pre>
+        </div>
+
         <script src="js/plugins.js"></script>
+        <script src="../bower_components/jquery/dist/jquery.min.js"></script>
         <script src="js/jQueryGetPath.js"></script>
+        <script src="js/main.js"></script>
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='https://www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-        </script>
     </body>
 </html>

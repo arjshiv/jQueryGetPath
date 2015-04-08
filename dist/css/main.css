@@ -94,22 +94,43 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+body {
+    font-family: Roboto, arial, sans-serif;
+}
+.well {
+    background: whitesmoke;
+    margin: 10px;
+    border-radius: 4px;
+    padding: 10px;
+    border: 1px solid rgb(229, 229, 229);
+}
 
+.well.source {
+    background-color: #001b36;
+    color: white;
+}
 
+.pathfinder:hover {
+    cursor: pointer;
+    background-color: #53c5d8;
+    color: white;
+}
 
+div.results {
+    margin: 10px;
+    margin-top: 30px;
+    background-color: #aeb9ca;
+    padding: 10px;
+    border: 3px solid rgb(229, 229, 229);
+    font-size: 125%;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+div#resultDiv {
+    font-family: monospace;
+    white-space: pre;
+    font-weight: bold;
+    font-size: 18px;
+}
 
 /* ==========================================================================
    Helper classes
