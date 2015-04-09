@@ -1,7 +1,7 @@
-# jQuery getPath
+# jQuery getPath [Quick demo](http://htmlpreview.github.io/?https://github.com/arjshiv/jQueryGetPath/blob/master/dist/index.html)
 
 jQueryGetPath is a simple jQuery extension to get the CSS Path of any element in the DOM as uniquely as possible.
-[Example here](http://htmlpreview.github.io/?https://github.com/arjshiv/jQueryGetPath/blob/master/dist/index.html)
+
 
 ## Quick start
 

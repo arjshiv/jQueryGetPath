@@ -98,6 +98,19 @@ body {
     font-family: Roboto, arial, sans-serif;
     margin: 0px 0px 10px 10px;
 }
+a {
+    border: 1px solid #333;
+    color: #333;
+    border-radius: 4px;
+    padding: 5px;
+    margin-top: 3px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #222;
+    background-color: #ebebeb;
+}
 .well {
     background: whitesmoke;
     margin: 10px;
