@@ -89,6 +89,7 @@ textarea {
    ========================================================================== */
 body {
     font-family: Roboto, arial, sans-serif;
+    margin: 0px 0px 10px 10px;
 }
 .well {
     background: whitesmoke;
@@ -101,6 +102,7 @@ body {
 .well.source {
     background-color: #001b36;
     color: white;
+    font-size: 125%;
 }
 
 .pathfinder:hover {
@@ -123,6 +125,11 @@ div#resultDiv {
     white-space: pre;
     font-weight: bold;
     font-size: 18px;
+    display: inline-block;
+}
+
+div.header {
+    text-align: center;
 }
 
 /* ==========================================================================

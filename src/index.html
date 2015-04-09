@@ -17,17 +17,17 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <h1>jQueryGetPath Demo</h1> &copy;2015 Arjun Shivanand Kannan
+        <div class="header"><h1>jQueryGetPath Demo</h1> &copy;2015 Arjun Shivanand Kannan</div>
         <div class="results">
-            You clicked on:
-            <div id="resultDiv">Click any of the following elements to get started</div>
+            You are on:
+            <div id="resultDiv">Hover any of the following elements to get started</div>
         </div>
         <div id="div0">
             <div class="well">
-                <div class="pathfinder">Clickable without ID</div>
+                <div class="pathfinder">Div without ID</div>
             </div>
             <div class="well">
-                <div id="withId" class="pathfinder">Clickable with ID</div>
+                <div id="withId" class="pathfinder">Div with ID</div>
             </div>
         </div>
         <div id="div1">
@@ -50,14 +50,7 @@
         </div>
         <div class="source well">
             How does this work ?
-            <pre>
-$(function(){
-    $('.pathfinder').on('click', function(){
-        var $currentNode = $(this);
-        var cssPathForThisNode = $currentNode.getPath(); //This is where the magic happens
-        $('#resultDiv').html(cssPathForThisNode);
-    });
-});</pre>
+            <pre id="demoCode"></pre>
         </div>
         <script src="js/plugins.js"></script>
         <script src="http://code.jquery.com/jquery-latest.min.js"></script>
