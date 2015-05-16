@@ -1,6 +1,6 @@
 /* globals jQuery */
 jQuery.fn.extend({
-    getPath: function(){
+    getPath: function () {
         "use strict";
         var path;
         var node = this;
@@ -19,7 +19,7 @@ jQuery.fn.extend({
                 var tag = uniqueTags[i];
                 var tagValue = node.attr(tag);
                 if (tagValue && (tagValue.trim !== '')) {
-                    name += '[' + tag + '=\"' + tagValue + '\"]';
+                    name = '[' + tag + '=\"' + tagValue + '\"]';
                     //we've found a unique identifier so we're done
                     uniqueIdentifierFound = true;
                     break; //exit for loop
